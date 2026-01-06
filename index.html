@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[투어메이커] 도쿄/요코하마 3박4일 프리미엄 가이드 (5/22 출발)</title>
+    <title>[투어메이커] 도쿄/요코하마 4일 프리미엄 가이드 (5/22 출발)</title>
     
-    <!-- 🚨 Google Analytics (GA4) - 투어메이커 통합 관리 -->
+    <!-- 🚨 Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLH9GD9SVR"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -14,11 +14,10 @@
 
       gtag('config', 'G-JLH9GD9SVR');
     </script>
-    <!-- // Google Analytics 끝 -->
     
     <!-- Open Graph -->
-    <meta property="og:title" content="[투어메이커] 도쿄/요코하마/오다이바 3박4일 (5/22)">
-    <meta property="og:description" content="이스타항공/시내호텔/자유일정포함 - 투어메이커가 제안하는 우리만의 도쿄 여행">
+    <meta property="og:title" content="[투어메이커] 도쿄/요코하마 4일 (5/22)">
+    <meta property="og:description" content="1일 자유시간 포함! 도쿄/요코하마 핵심 관광 + 3성급 호텔">
     <meta property="og:image" content="https://img.youtube.com/vi/cn2E8VlWKbY/maxresdefault.jpg">
 
     <!-- Tailwind CSS -->
@@ -35,33 +34,18 @@
             color: #334155; 
         }
         
-        /* Hero Background - Tokyo Style */
+        /* Hero Background */
         .hero-bg-jp { 
             background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.6)), url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2094&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         } 
         
-        /* Navigation Active State */
         .nav-link.active { color: #db2777; font-weight: 700; border-bottom: 2px solid #db2777; }
-        
-        /* Interactive */
         .hover-zoom { transition: transform 0.5s ease; }
         .group:hover .hover-zoom { transform: scale(1.05); }
 
-        /* Notepad Style */
-        .notepad {
-            background-color: #fefce8; 
-            background-image: linear-gradient(#e5e7eb 1px, transparent 1px);
-            background-size: 100% 2rem;
-            line-height: 2rem;
-            border-top: 6px solid #f59e0b;
-        }
-        
-        /* Scroll Anchor Offset */
-        section { scroll-margin-top: 70px; }
-
-        /* Scrollbar Hide */
+        /* Custom Scrollbar Hide */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
@@ -103,7 +87,8 @@
             <div class="z-10 text-white max-w-5xl w-full animate-fade-in-up flex flex-col items-center">
                 
                 <h1 class="text-3xl md:text-5xl font-[Nanum Myeongjo] font-bold leading-tight text-white drop-shadow-xl mb-4">
-                    도쿄/요코하마/오다이바<br>완벽한 3박 4일
+                    도쿄 & 요코하마 낭만여행<br>
+                    <span class="text-2xl md:text-4xl">완벽한 3박 4일</span>
                 </h1>
 
                 <p class="text-base md:text-lg text-slate-200 mb-8 font-light tracking-wide">
@@ -113,23 +98,23 @@
                 <!-- 4대 핵심 포인트 -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 w-full max-w-4xl mb-10">
                     <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 md:p-4 flex flex-col items-center justify-center hover:bg-white/20 transition-all">
-                        <i class="fa-solid fa-person-walking-luggage text-sky-300 text-2xl md:text-3xl mb-2"></i>
-                        <span class="text-xs md:text-sm font-bold text-white">1일 자유</span>
-                        <span class="text-[10px] text-slate-300">내 맘대로 일정</span>
+                        <i class="fa-solid fa-city text-sky-300 text-2xl md:text-3xl mb-2"></i>
+                        <span class="text-xs md:text-sm font-bold text-white">2일차 투어</span>
+                        <span class="text-[10px] text-slate-300">요코하마/신주쿠/시부야</span>
                     </div>
                     <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 md:p-4 flex flex-col items-center justify-center hover:bg-white/20 transition-all">
-                        <i class="fa-solid fa-bed text-yellow-300 text-2xl md:text-3xl mb-2"></i>
-                        <span class="text-xs md:text-sm font-bold text-white">시내 호텔</span>
-                        <span class="text-[10px] text-slate-300">나리타1박/시내2박</span>
+                        <i class="fa-solid fa-person-running text-yellow-300 text-2xl md:text-3xl mb-2"></i>
+                        <span class="text-xs md:text-sm font-bold text-white">3일차 자유</span>
+                        <span class="text-[10px] text-slate-300">내 맘대로 하루종일</span>
                     </div>
                     <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 md:p-4 flex flex-col items-center justify-center hover:bg-white/20 transition-all">
                         <i class="fa-solid fa-user-group text-pink-300 text-2xl md:text-3xl mb-2"></i>
                         <span class="text-xs md:text-sm font-bold text-white">6명 출발</span>
-                        <span class="text-[10px] text-slate-300">트윈룸 3객실</span>
+                        <span class="text-[10px] text-slate-300">트윈룸 3객실 확정</span>
                     </div>
                     <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 md:p-4 flex flex-col items-center justify-center hover:bg-white/20 transition-all">
                         <i class="fa-solid fa-map-location-dot text-emerald-300 text-2xl md:text-3xl mb-2"></i>
-                        <span class="text-xs md:text-sm font-bold text-white">핵심 관광</span>
+                        <span class="text-xs md:text-sm font-bold text-white">알찬 관광</span>
                         <span class="text-[10px] text-slate-300">오다이바/아사쿠사</span>
                     </div>
                 </div>
@@ -237,36 +222,36 @@
             </div>
         </section>
 
-        <!-- 3. Highlights -->
+        <!-- 3. Highlights (Updated) -->
         <section id="highlights" class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-10">
                     <h2 class="text-2xl font-bold text-slate-800">여행 하이라이트</h2>
-                    <p class="text-sm text-slate-500 mt-1">자유일정 추천 코스 & 포함 일정</p>
+                    <p class="text-sm text-slate-500 mt-1">이 여행의 핵심 포인트</p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                    <!-- Odaiba (Updated Image) -->
+                    <!-- Yokohama -->
                     <div class="group relative rounded-xl overflow-hidden shadow-lg h-64">
-                        <img src="https://tse3.mm.bing.net/th/id/OIP.Ise2DXibhCT7Vn9ggJAy4gHaE6?w=474&h=379&c=7&p=0" class="w-full h-full object-cover hover-zoom" alt="Odaiba">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.4TEbD5UYdCN6t8soCf3qXQHaKD?w=474&h=379&c=7&p=0" class="w-full h-full object-cover hover-zoom" alt="Yokohama">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4 text-white">
-                            <h3 class="font-bold text-lg">오다이바 (포함)</h3>
-                            <p class="text-xs opacity-90">건담 & 자유의 여신상 & 해변공원</p>
+                            <h3 class="font-bold text-lg">요코하마 (2일차)</h3>
+                            <p class="text-xs opacity-90">일본 3대 미항, 오산바시 & 아카렌가</p>
                         </div>
                     </div>
-                    <!-- Disney (Updated Image) -->
+                    <!-- Shibuya -->
                     <div class="group relative rounded-xl overflow-hidden shadow-lg h-64">
-                        <img src="https://tse4.mm.bing.net/th/id/OIP.X-M3wXyQA-wzENIMu0EPkQHaEK?w=474&h=379&c=7&p=0" class="w-full h-full object-cover hover-zoom" alt="Disney">
+                         <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover hover-zoom" alt="Shibuya">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4 text-white">
-                            <h3 class="font-bold text-lg">디즈니 리조트 (추천)</h3>
-                            <p class="text-xs opacity-90">자유일정에 다녀오기 딱 좋아요!</p>
+                            <h3 class="font-bold text-lg">신주쿠 & 시부야 (2일차)</h3>
+                            <p class="text-xs opacity-90">도쿄의 심장, 가장 핫한 거리 탐방</p>
                         </div>
                     </div>
-                    <!-- Yokohama (New) -->
+                    <!-- Free Day -->
                     <div class="group relative rounded-xl overflow-hidden shadow-lg h-64">
-                        <img src="https://images.unsplash.com/photo-1572883454114-1cf0031100f8?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover hover-zoom" alt="Yokohama">
+                         <img src="https://tse4.mm.bing.net/th/id/OIP.X-M3wXyQA-wzENIMu0EPkQHaEK?w=474&h=379&c=7&p=0" class="w-full h-full object-cover hover-zoom" alt="Disney">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4 text-white">
-                            <h3 class="font-bold text-lg">요코하마 (추천)</h3>
-                            <p class="text-xs opacity-90">미나토미라이 & 차이나타운 투어</p>
+                            <h3 class="font-bold text-lg">전일 자유 일정 (3일차)</h3>
+                            <p class="text-xs opacity-90">디즈니/하코네/쇼핑 내 맘대로!</p>
                         </div>
                     </div>
                 </div>
@@ -278,9 +263,10 @@
             <div class="container mx-auto px-4">
                 <div class="text-center mb-4">
                     <h2 class="text-2xl font-bold text-slate-800">상세 일정표</h2>
+                    <p class="text-slate-500 text-sm mt-1">2일차는 알찬 관광, 3일차는 완벽한 자유!</p>
                 </div>
 
-                <!-- Modetour Official Link Box -->
+                <!-- Modetour Official Link Box (Updated Link) -->
                 <div class="max-w-3xl mx-auto mb-8 animate-fade-in-up">
                     <div class="bg-white rounded-xl shadow-sm border border-pink-100 p-4 md:p-5 flex flex-col md:flex-row items-center justify-between gap-4">
                         <div class="flex items-start gap-3">
@@ -292,7 +278,7 @@
                                 <p class="text-xs text-slate-500 mt-1">현지 사정에 의해 일정이 변경될 수 있습니다.</p>
                             </div>
                         </div>
-                        <a href="https://www.modetour.com/package/jhp613zenc" target="_blank" class="w-full md:w-auto bg-pink-600 hover:bg-pink-700 text-white text-sm font-bold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+                        <a href="https://www.modetour.com/package/98681879?MLoc=99&Pnum=98681879&Sno=C1091311&ANO=7900804&thru=crs" target="_blank" class="w-full md:w-auto bg-pink-600 hover:bg-pink-700 text-white text-sm font-bold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
                             <span>상품 원문 보기</span>
                             <i class="fa-solid fa-external-link-alt"></i>
                         </a>
@@ -326,54 +312,80 @@
                             <li class="relative">
                                 <span class="absolute -left-[31px] top-1 w-4 h-4 bg-slate-400 rounded-full"></span>
                                 <p class="text-slate-800 font-medium">호텔 투숙 및 휴식</p>
-                                <p class="text-sm text-slate-500 mt-1">호텔: 나리타 게이트웨이 또는 동급 (3성급)</p>
+                                <p class="text-sm text-slate-500 mt-1">호텔: 나리타 게이트웨이 또는 동급</p>
+                                <p class="text-xs text-red-500 mt-1">*석식은 불포함입니다.</p>
                             </li>
                         </ul>
                     </div>
-                    <!-- Day 2 -->
+                    
+                    <!-- Day 2 (Fully Updated) -->
                     <div id="day2" class="tab-content hidden animate-fade-in">
-                        <h3 class="font-bold text-lg mb-4 text-slate-800">자유 일정 (내 맘대로 도쿄)</h3>
-                        <div class="bg-yellow-50 p-4 rounded-lg mb-4 text-sm text-slate-700">
-                            <i class="fa-solid fa-lightbulb text-yellow-500 mr-2"></i><strong>추천 일정</strong><br>
-                            전일 자유 일정입니다. 디즈니 또는 요코하마 여행을 추천합니다!
+                        <h3 class="font-bold text-lg mb-4 text-slate-800">요코하마 & 도쿄 핵심 관광 (전용버스)</h3>
+                        <div class="bg-indigo-50 p-4 rounded-lg mb-4 text-sm text-slate-700 border border-indigo-100">
+                            <i class="fa-solid fa-bus text-indigo-500 mr-2"></i><strong>패키지 투어</strong><br>
+                            편안하게 전용버스로 이동하며 일본 3대 미항 요코하마와 도쿄의 핫플레이스를 정복합니다!
                         </div>
                         <ul class="space-y-6 border-l-2 border-slate-100 ml-2 pl-6">
                             <li class="relative"><span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span><p class="text-slate-800 font-medium">호텔 조식</p></li>
                             <li class="relative">
-                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-purple-500 rounded-full"></span>
-                                <p class="text-slate-800 font-medium">옵션 1: 도쿄 디즈니 리조트</p>
-                                <p class="text-xs text-slate-500 mt-1">꿈과 환상의 나라 (사전 신청 필수 / 가이드 비동행)</p>
-                            </li>
-                            <li class="relative">
-                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-emerald-500 rounded-full"></span>
-                                <p class="text-slate-800 font-medium">옵션 2: 요코하마 낭만 투어</p>
-                                <p class="text-xs text-slate-500 mt-1">미나토미라이 야경, 차이나타운, 아카렌가 창고</p>
-                            </li>
-                            <li class="relative">
-                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-blue-500 rounded-full"></span>
-                                <p class="text-slate-800 font-medium">옵션 3: 하코네 국립공원 투어</p>
-                                <p class="text-xs text-slate-500 mt-1">후지산 조망, 온천, 유람선 (4인 이상 신청 시)</p>
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span>
+                                <p class="text-slate-800 font-bold">요코하마 관광 (약 1시간 50분 이동)</p>
+                                <div class="mt-2 bg-slate-50 p-3 rounded text-sm text-slate-600">
+                                    <p class="mb-1">✅ <strong>오산바시 전망대</strong>: 요코하마 항구와 스카이라인을 한눈에!</p>
+                                    <p>✅ <strong>아카렌가 창고</strong>: 레트로한 붉은 벽돌 창고에서 즐기는 쇼핑과 산책</p>
+                                </div>
                             </li>
                             <li class="relative">
                                 <span class="absolute -left-[31px] top-1 w-4 h-4 bg-slate-400 rounded-full"></span>
-                                <p class="text-slate-800 font-medium">호텔 투숙</p>
-                                <p class="text-sm text-slate-500 mt-1">호텔: 데이 나이스 호텔 또는 동급 (비즈니스급)</p>
+                                <p class="text-slate-800 font-medium">중식 (현지식)</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span>
+                                <p class="text-slate-800 font-bold">도쿄 핵심 관광 (도쿄로 이동)</p>
+                                <div class="mt-2 bg-slate-50 p-3 rounded text-sm text-slate-600">
+                                    <p class="mb-1">✅ <strong>도쿄도청 전망대</strong>: 도쿄 시내를 360도로 조망 (무료)</p>
+                                    <p class="mb-1">✅ <strong>신주쿠 가부키쵸</strong>: 도쿄 최대의 번화가</p>
+                                    <p class="mb-1">✅ <strong>시부야 관광</strong>: 스크램블 교차로, 미야시타 파크(공중정원), 논베이 요코초</p>
+                                </div>
+                            </li>
+                             <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-slate-400 rounded-full"></span>
+                                <p class="text-slate-800 font-medium">석식 (자유식/불포함) 및 호텔 투숙</p>
+                                <p class="text-sm text-slate-500 mt-1">호텔: 데이 나이스 호텔 또는 빌라폰테뉴 가야바초 등 (동급)</p>
                             </li>
                         </ul>
                     </div>
-                    <!-- Day 3 -->
+
+                    <!-- Day 3 (Fully Updated) -->
                     <div id="day3" class="tab-content hidden animate-fade-in">
-                        <h3 class="font-bold text-lg mb-4 text-slate-800">자유 일정 (숨은 명소 찾기)</h3>
+                        <h3 class="font-bold text-lg mb-4 text-slate-800">전일 자유 일정</h3>
                          <div class="bg-yellow-50 p-4 rounded-lg mb-4 text-sm text-slate-700">
-                            <i class="fa-solid fa-lightbulb text-yellow-500 mr-2"></i><strong>추천 일정</strong><br>
-                            전일 자유 일정입니다. 도쿄 시내 핫플레이스를 정복해보세요.
+                            <i class="fa-solid fa-lightbulb text-yellow-500 mr-2"></i><strong>자유시간 100% 즐기기</strong><br>
+                            가이드와 버스가 없는 날입니다. 원하시는 일정으로 자유롭게 즐기거나 아래 선택관광을 이용해보세요!
                         </div>
                         <ul class="space-y-6 border-l-2 border-slate-100 ml-2 pl-6">
                             <li class="relative"><span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span><p class="text-slate-800 font-medium">호텔 조식</p></li>
                             <li class="relative">
                                 <span class="absolute -left-[31px] top-1 w-4 h-4 bg-purple-500 rounded-full"></span>
-                                <p class="text-slate-800 font-medium">자유 시간 즐기기</p>
-                                <p class="text-xs text-slate-500 mt-1">추천: 시부야 스카이 전망대, 신주쿠 쇼핑, 오모테산도 카페거리</p>
+                                <p class="text-slate-800 font-bold mb-2">추천 일정 / 선택 관광 (사전 신청 필수)</p>
+                                
+                                <div class="grid md:grid-cols-2 gap-3">
+                                    <div class="border rounded-lg p-3 hover:shadow-md transition bg-white">
+                                        <div class="font-bold text-purple-700 text-sm mb-1"><i class="fa-brands fa-fort-awesome mr-1"></i>디즈니 원데이 패스</div>
+                                        <p class="text-xs text-slate-600">성인/아동 10만원</p>
+                                        <p class="text-[10px] text-slate-400 mt-1">*가이드 미동행 / 파크 지정 필수</p>
+                                    </div>
+                                    <div class="border rounded-lg p-3 hover:shadow-md transition bg-white">
+                                        <div class="font-bold text-emerald-700 text-sm mb-1"><i class="fa-solid fa-mountain mr-1"></i>하코네 국립공원</div>
+                                        <p class="text-xs text-slate-600">성인/아동 20만원 (중식 포함)</p>
+                                        <p class="text-[10px] text-slate-400 mt-1">*4인 이상 출발 / 유황계곡, 해적선</p>
+                                    </div>
+                                    <div class="border rounded-lg p-3 hover:shadow-md transition bg-white col-span-2 md:col-span-1">
+                                        <div class="font-bold text-blue-700 text-sm mb-1"><i class="fa-solid fa-bus mr-1"></i>도쿄 시티 투어</div>
+                                        <p class="text-xs text-slate-600">성인/아동 16만원 (중식 포함)</p>
+                                        <p class="text-[10px] text-slate-400 mt-1">*4인 이상 / 츠키지, 긴자, 황거 등</p>
+                                    </div>
+                                </div>
                             </li>
                              <li class="relative">
                                 <span class="absolute -left-[31px] top-1 w-4 h-4 bg-slate-400 rounded-full"></span>
@@ -382,6 +394,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <!-- Day 4 -->
                     <div id="day4" class="tab-content hidden animate-fade-in">
                         <h3 class="font-bold text-lg mb-4 text-slate-800">핵심 관광 & 귀국</h3>
@@ -393,7 +406,11 @@
                                 <p class="text-xs text-slate-500 mt-1">도쿄의 전통이 살아있는 거리</p>
                             </li>
                             <li class="relative"><span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span><p class="text-slate-800 font-medium">스카이트리 (차창 조망)</p></li>
-                            <li class="relative"><span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span><p class="text-slate-800 font-medium">쇼핑센터 방문 (1회)</p></li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span>
+                                <p class="text-slate-800 font-medium">면세점 쇼핑 (1회)</p>
+                                <p class="text-xs text-slate-500 mt-1">ALEXANDER&SUN (약 30~40분)</p>
+                            </li>
                             <li class="relative">
                                 <span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span>
                                 <p class="text-slate-800 font-medium">오다이바 해변공원</p>
@@ -415,7 +432,7 @@
             </div>
         </section>
 
-        <!-- 5. Hotel Info -->
+        <!-- 5. Hotel Info (Updated) -->
         <section id="hotel" class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <div class="max-w-5xl mx-auto">
@@ -435,8 +452,8 @@
                             </div>
                             <div class="p-6">
                                 <h3 class="text-lg font-bold text-slate-800 mb-1">나리타 게이트웨이 호텔</h3>
-                                <p class="text-xs text-slate-500 mb-2">또는 동급 (마로드, 마이스테이즈 등)</p>
-                                <p class="text-sm text-slate-600">공항 접근성이 좋고 쾌적한 3성급 호텔입니다.</p>
+                                <p class="text-xs text-slate-500 mb-2">또는 동급 (마로드, 마이스테이즈, 아나크라운 등)</p>
+                                <p class="text-sm text-slate-600">공항 접근성이 좋고 쾌적한 3성~4성급 호텔입니다.</p>
                             </div>
                         </div>
                         <!-- Hotel 2 -->
@@ -447,7 +464,7 @@
                             </div>
                             <div class="p-6">
                                 <h3 class="text-lg font-bold text-slate-800 mb-1">데이 나이스 호텔</h3>
-                                <p class="text-xs text-slate-500 mb-2">또는 동급 (도쿄 씨포트, T마크 시티 등)</p>
+                                <p class="text-xs text-slate-500 mb-2">또는 동급 (빌라폰테뉴 가야바초, 일피오레 카사이 등)</p>
                                 <p class="text-sm text-slate-600">도쿄 시내 이동이 편리한 비즈니스급 호텔입니다.</p>
                             </div>
                         </div>
@@ -456,7 +473,7 @@
             </div>
         </section>
 
-        <!-- 6. Video (Updated ID and Start Time) -->
+        <!-- 6. Video -->
         <section class="py-16 bg-slate-900">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-8 text-white">
@@ -490,7 +507,7 @@
 
                     <!-- Contact & Tip -->
                     <div class="space-y-6">
-                        <!-- Tip Box (Updated for Join Tour Notice) -->
+                        <!-- Tip Box -->
                         <div class="bg-indigo-50 p-6 rounded-2xl shadow-sm border border-indigo-100">
                              <h3 class="font-bold mb-3 text-indigo-800 flex items-center">
                                 <i class="fa-solid fa-circle-exclamation mr-2"></i>패키지 행사 유의사항
@@ -504,12 +521,12 @@
                                 </div>
                                 <p>
                                     <i class="fa-solid fa-check text-indigo-500 mr-1"></i>
-                                    일정 진행은 전체 그룹과 함께 움직이며, 가이드의 안내에 따라 집결 시간을 준수해주셔야 합니다.
+                                    1, 2, 4일차 일정 진행은 전체 그룹과 함께 움직이며, 가이드의 안내에 따라 집결 시간을 준수해주셔야 합니다.
                                 </p>
                                 <hr class="border-indigo-200">
                                 <p>
                                     <span class="font-bold bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded text-xs mr-1">우리끼리 꿀팁</span>
-                                    단, <strong>2/3일차 자유 일정</strong> 시에는 우리 일행(6명)끼리만 다니시게 됩니다. 이때 <strong>택시 2대</strong>를 이용하시거나, <strong>[단독 차량 투어]</strong>를 신청하시면 더욱 편안합니다.
+                                    <strong>3일차는 전일 자유 일정</strong>입니다. 우리끼리 오붓하게 다니시거나, 미리 신청하신 선택관광(디즈니 등)을 즐기시면 됩니다.
                                 </p>
                              </div>
                         </div>
@@ -552,8 +569,8 @@
                 <!-- Tourmaker -->
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" alt="Tourmaker" class="h-8 md:h-10 w-auto">
                 <span class="text-xl text-slate-300 font-light">|</span>
-                <!-- Modetour -->
-                <img src="https://www.modetour.com/icons/logo.png" alt="Modetour" class="h-6 md:h-8 w-auto">
+                <!-- Modetour (Updated Logo) -->
+                <img src="https://tse1.mm.bing.net/th/id/OIP.9D2jXBkSf3AbbnsJdL33cAHaEd?w=474&h=379&c=7&p=0" alt="Modetour" class="h-6 md:h-8 w-auto">
             </div>
 
             <div class="max-w-2xl mx-auto space-y-2">

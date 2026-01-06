@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[투어메이커] 도쿄 3박4일 프리미엄 가이드 (5/22 출발)</title>
+    
+    <!-- 🚨 Google Analytics (GA4) - 투어메이커 통합 관리 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLH9GD9SVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JLH9GD9SVR');
+    </script>
+    <!-- // Google Analytics 끝 -->
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="[투어메이커] 도쿄 3박4일 일정표 (5/22)">
+    <meta property="og:description" content="이스타항공/시내호텔/자유일정포함 - 투어메이커가 제안하는 우리만의 도쿄 여행">
+    <meta property="og:image" content="https://img.youtube.com/vi/xY_heAX39qc/maxresdefault.jpg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <style>
+        body { 
+            font-family: 'Noto Sans KR', sans-serif; 
+            background-color: #f8fafc; 
+            color: #334155; 
+        }
+        
+        /* Hero Background - Tokyo Style */
+        .hero-bg-jp { 
+            background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.6)), url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2094&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        } 
+        
+        /* Navigation Active State */
+        .nav-link.active { color: #db2777; font-weight: 700; border-bottom: 2px solid #db2777; }
+        
+        /* Interactive */
+        .hover-zoom { transition: transform 0.5s ease; }
+        .group:hover .hover-zoom { transform: scale(1.05); }
+
+        /* Notepad Style */
+        .notepad {
+            background-color: #fefce8; 
+            background-image: linear-gradient(#e5e7eb 1px, transparent 1px);
+            background-size: 100% 2rem;
+            line-height: 2rem;
+            border-top: 6px solid #f59e0b;
+        }
+        
+        /* Scroll Anchor Offset */
+        section { scroll-margin-top: 70px; }
+
+        /* Scrollbar Hide */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="antialiased pb-20 md:pb-0">
+
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center gap-2 md:gap-3">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" alt="Tourmaker" class="h-6 md:h-8 w-auto">
+                    <!-- D-Day Badge -->
+                    <div id="d-day-badge" class="bg-pink-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-full shadow animate-pulse">
+                        D-Day
+                    </div>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+                    <a href="#home" class="nav-link">홈</a>
+                    <a href="#guide" class="nav-link text-blue-600 font-bold">안심 가이드</a>
+                    <a href="#timeline" class="nav-link">상세일정</a>
+                    <a href="#assistant" class="nav-link text-yellow-600 font-bold">여행비서</a>
+                </div>
+
+                <!-- Share Button -->
+                <button onclick="shareLink()" class="text-slate-500 hover:text-pink-600 transition-colors p-2 active:scale-90 transform">
+                    <i class="fa-solid fa-share-nodes text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="home" class="hero-bg-jp min-h-[85vh] flex items-center justify-center text-center px-4 relative scroll-mt-0">
+            <div class="z-10 text-white max-w-5xl w-full animate-fade-in-up flex flex-col items-center">
+                
+                <h1 class="text-4xl md:text-6xl font-[Nanum Myeongjo] font-bold leading-tight text-white drop-shadow-xl mb-4">
+                    우리끼리 떠나는<br>도쿄 3박 4일
+                </h1>
+
+                <p class="text-base md:text-lg text-slate-200 mb-8 font-light tracking-wide">
+                    2026.05.22 (금) - 05.25 (월) | 이스타항공
+                </p>
+
+                <!-- 4대 핵심 포인트 -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 w-full max-w-4xl mb-10">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 md:p-4 flex flex-col items-center justify-center hover:bg-white/20 transition-all">
+                        <i class="fa-solid fa-person-walking-luggage text-sky-300 text-2xl md:text-3xl mb-2"></i>
+                        <span class="text-xs md:text-sm font-bold text-white">1일 자유</span>
+                        <span class="text-[10px] text-slate-300">내 맘대로 일정</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 md:p-4 flex flex-col items-center justify-center hover:bg-white/20 transition-all">
+                        <i class="fa-solid fa-bed text-yellow-300 text-2xl md:text-3xl mb-2"></i>
+                        <span class="text-xs md:text-sm font-bold text-white">시내 호텔</span>
+                        <span class="text-[10px] text-slate-300">나리타1박/시내2박</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 md:p-4 flex flex-col items-center justify-center hover:bg-white/20 transition-all">
+                        <i class="fa-solid fa-user-group text-pink-300 text-2xl md:text-3xl mb-2"></i>
+                        <span class="text-xs md:text-sm font-bold text-white">6명 출발</span>
+                        <span class="text-[10px] text-slate-300">트윈룸 3객실</span>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 md:p-4 flex flex-col items-center justify-center hover:bg-white/20 transition-all">
+                        <i class="fa-solid fa-map-location-dot text-emerald-300 text-2xl md:text-3xl mb-2"></i>
+                        <span class="text-xs md:text-sm font-bold text-white">핵심 관광</span>
+                        <span class="text-[10px] text-slate-300">오다이바/아사쿠사</span>
+                    </div>
+                </div>
+
+                <div class="animate-bounce mt-4">
+                    <i class="fa-solid fa-chevron-down text-2xl text-white/70"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Airport Guide -->
+        <section id="guide" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <span class="text-blue-600 font-bold tracking-wider uppercase text-sm">Safe Guide</span>
+                    <h2 class="text-3xl font-bold mt-2 text-slate-800">출발 & 도착 가이드</h2>
+                    <p class="text-slate-500 mt-2">안전하고 편안한 여행의 시작을 도와드립니다.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                    
+                    <!-- Part 1: Incheon Departure -->
+                    <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+                        <div class="bg-slate-800 p-4 text-white flex justify-between items-center">
+                            <h3 class="text-lg font-bold"><i class="fa-solid fa-plane-departure mr-2 text-yellow-400"></i>인천공항 (5/22 금)</h3>
+                            <span class="text-xs bg-white/20 px-2 py-1 rounded">12:10 집결권장</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="mb-6 rounded-xl overflow-hidden border border-slate-200 relative group">
+                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiEXhpA7uy-G_azFlJDunrNqxMDk66pBlC0CejStjfsvEGXuNeExHh1O1UWIQpjJcu8txmbl7Tw00d37GsHK6OlG1w3Dq3sz0nnL7XHre_B_1ZUMAnylF8AmSHHjo14UIQ8gPfSXivpGOPb7e7FPWoV4a-xSNqyPlXMHAgVPeRT4aRoAdkzAu0loR1j3sw" alt="Meeting Point" class="w-full object-cover">
+                                <div class="absolute bottom-0 w-full bg-black/60 text-white text-xs p-2 text-center">
+                                    ▲ T1 3층 출국장 N카운터 창측 여행사 테이블 (사전확인 필요)
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+                                <p class="font-bold text-blue-800 text-sm mb-2">✅ 수속 방법 안내</p>
+                                <div class="space-y-3 text-sm text-slate-700">
+                                    <div class="flex items-start">
+                                        <span class="bg-blue-200 text-blue-800 text-xs font-bold px-2 py-0.5 rounded mr-2 shrink-0">수속</span>
+                                        <div>
+                                            <strong class="text-slate-900">이스타항공 (ZE) 카운터</strong>
+                                            <p class="text-xs mt-1 leading-relaxed text-slate-600">
+                                                개별적으로 카운터에서 여권을 제시하고 탑승권을 발급받아주세요. (출발 3시간 전 도착 권장)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4 text-sm text-slate-700 border-t pt-4">
+                                <div class="flex items-center">
+                                    <span class="w-20 text-slate-500 font-bold">항공편</span>
+                                    <span class="font-bold text-slate-800">ZE603 (이스타항공)</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="w-20 text-slate-500 font-bold">출발시간</span>
+                                    <span class="font-bold text-slate-800">15:10 (30분 전 탑승구 도착)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Part 2: Narita Arrival -->
+                    <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+                        <div class="bg-pink-700 p-4 text-white flex justify-between items-center">
+                            <h3 class="text-lg font-bold"><i class="fa-solid fa-plane-arrival mr-2 text-yellow-400"></i>나리타공항 (5/22 17:30)</h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-6 flex items-center animate-pulse">
+                                <i class="fa-solid fa-passport text-yellow-600 text-xl mr-3"></i>
+                                <div>
+                                    <p class="text-xs font-bold text-yellow-800">입국 전 필수 체크</p>
+                                    <p class="text-[10px] text-slate-600">Visit Japan Web 등록 하셨나요? (QR코드 준비)</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6 relative border-l-2 border-pink-100 ml-3 pl-6 py-2">
+                                <div class="relative">
+                                    <div class="absolute -left-[31px] top-0 w-4 h-4 bg-pink-500 rounded-full ring-4 ring-white"></div>
+                                    <h4 class="font-bold text-slate-800">1. 입국 심사</h4>
+                                    <p class="text-xs text-slate-500 mt-1">Visit Japan QR 또는 기내 작성 종이 제출</p>
+                                </div>
+                                <div class="relative">
+                                    <div class="absolute -left-[31px] top-0 w-4 h-4 bg-pink-500 rounded-full ring-4 ring-white"></div>
+                                    <h4 class="font-bold text-slate-800">2. 수하물 수령</h4>
+                                    <p class="text-xs text-slate-500 mt-1">ZE603 편명 확인 후 짐 찾기</p>
+                                </div>
+                                <div class="relative">
+                                    <div class="absolute -left-[31px] top-0 w-4 h-4 bg-pink-500 rounded-full ring-4 ring-white"></div>
+                                    <h4 class="font-bold text-pink-700">3. 가이드 미팅</h4>
+                                    <div class="mt-2 bg-pink-50 p-4 rounded border border-pink-200">
+                                        <p class="text-sm font-bold text-slate-800 mb-2"><i class="fa-solid fa-flag text-red-500 mr-1"></i>미팅 포인트</p>
+                                        <p class="text-sm text-slate-700 leading-relaxed">
+                                            입국장 로비로 나오셔서<br>
+                                            <span class="text-red-600 font-bold bg-white px-1 border border-red-200">[모두투어] 피켓</span>을 든 가이드를 찾아주세요.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Highlights -->
+        <section id="highlights" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl font-bold text-slate-800">여행 하이라이트</h2>
+                    <p class="text-sm text-slate-500 mt-1">자유일정 추천 코스 & 포함 일정</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    <!-- Odaiba -->
+                    <div class="group relative rounded-xl overflow-hidden shadow-lg h-64">
+                        <img src="https://images.unsplash.com/photo-1596767676906-8c467a505671?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover hover-zoom" alt="Odaiba">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4 text-white">
+                            <h3 class="font-bold text-lg">오다이바 (포함)</h3>
+                            <p class="text-xs opacity-90">건담 & 자유의 여신상 & 해변공원</p>
+                        </div>
+                    </div>
+                    <!-- Disney (Option) -->
+                    <div class="group relative rounded-xl overflow-hidden shadow-lg h-64">
+                        <img src="https://images.unsplash.com/photo-1506450637375-728775438813?q=80&w=1974&auto=format&fit=crop" class="w-full h-full object-cover hover-zoom" alt="Disney">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4 text-white">
+                            <h3 class="font-bold text-lg">디즈니 리조트 (추천)</h3>
+                            <p class="text-xs opacity-90">자유일정에 다녀오기 딱 좋아요!</p>
+                        </div>
+                    </div>
+                    <!-- Hakone/City (Option) -->
+                    <div class="group relative rounded-xl overflow-hidden shadow-lg h-64">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover hover-zoom" alt="City View">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4 text-white">
+                            <h3 class="font-bold text-lg">도쿄 시티 투어 (추천)</h3>
+                            <p class="text-xs opacity-90">긴자, 아사쿠사, 시부야 핫플레이스</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Timeline -->
+        <section id="timeline" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-4">
+                    <h2 class="text-2xl font-bold text-slate-800">상세 일정표</h2>
+                </div>
+
+                <!-- Modetour Official Link Box -->
+                <div class="max-w-3xl mx-auto mb-8 animate-fade-in-up">
+                    <div class="bg-white rounded-xl shadow-sm border border-pink-100 p-4 md:p-5 flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div class="flex items-start gap-3">
+                            <div class="bg-pink-100 p-2 rounded-full shrink-0">
+                                <i class="fa-solid fa-circle-info text-pink-600 text-lg"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="font-bold text-slate-800 text-sm md:text-base">포함/불포함 사항이 궁금하신가요?</p>
+                                <p class="text-xs text-slate-500 mt-1">현지 사정에 의해 일정이 변경될 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://www.modetour.com/package/jhp613zenc" target="_blank" class="w-full md:w-auto bg-pink-600 hover:bg-pink-700 text-white text-sm font-bold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+                            <span>상품 원문 보기</span>
+                            <i class="fa-solid fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="flex overflow-x-auto no-scrollbar gap-2 mb-6 max-w-3xl mx-auto px-1">
+                    <button class="tab-btn active flex-1 min-w-[80px] py-3 rounded-xl border border-slate-200 bg-white font-bold text-slate-600 text-sm" onclick="openTab(event, 'day1')">1일차<br><span class="text-xs font-normal">5/22</span></button>
+                    <button class="tab-btn flex-1 min-w-[80px] py-3 rounded-xl border border-slate-200 bg-white font-bold text-slate-600 text-sm" onclick="openTab(event, 'day2')">2일차<br><span class="text-xs font-normal">5/23</span></button>
+                    <button class="tab-btn flex-1 min-w-[80px] py-3 rounded-xl border border-slate-200 bg-white font-bold text-slate-600 text-sm" onclick="openTab(event, 'day3')">3일차<br><span class="text-xs font-normal">5/24</span></button>
+                    <button class="tab-btn flex-1 min-w-[80px] py-3 rounded-xl border border-slate-200 bg-white font-bold text-slate-600 text-sm" onclick="openTab(event, 'day4')">4일차<br><span class="text-xs font-normal">5/25</span></button>
+                </div>
+
+                <div class="max-w-3xl mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 min-h-[400px]">
+                    <!-- Day 1 -->
+                    <div id="day1" class="tab-content animate-fade-in">
+                        <h3 class="font-bold text-lg mb-4 text-slate-800">도쿄 도착</h3>
+                        <ul class="space-y-6 border-l-2 border-slate-100 ml-2 pl-6">
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-sky-500 rounded-full"></span>
+                                <span class="text-sky-600 font-bold text-sm">15:10</span>
+                                <p class="text-slate-800 font-medium">인천 출발 (ZE603)</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span>
+                                <span class="text-pink-600 font-bold text-sm">17:30</span>
+                                <p class="text-slate-800 font-medium">나리타 도착</p>
+                                <p class="text-sm text-slate-500 mt-1">가이드 미팅 후 호텔 이동 (셔틀버스)</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-slate-400 rounded-full"></span>
+                                <p class="text-slate-800 font-medium">호텔 투숙 및 휴식</p>
+                                <p class="text-sm text-slate-500 mt-1">호텔: 나리타 게이트웨이 또는 동급 (3성급)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Day 2 -->
+                    <div id="day2" class="tab-content hidden animate-fade-in">
+                        <h3 class="font-bold text-lg mb-4 text-slate-800">자유 일정 (내 맘대로 도쿄)</h3>
+                        <div class="bg-yellow-50 p-4 rounded-lg mb-4 text-sm text-slate-700">
+                            <i class="fa-solid fa-lightbulb text-yellow-500 mr-2"></i><strong>추천 일정</strong><br>
+                            전일 자유 일정입니다. 아래 옵션 중 선택하시거나 자유롭게 여행하세요!
+                        </div>
+                        <ul class="space-y-6 border-l-2 border-slate-100 ml-2 pl-6">
+                            <li class="relative"><span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span><p class="text-slate-800 font-medium">호텔 조식</p></li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-purple-500 rounded-full"></span>
+                                <p class="text-slate-800 font-medium">옵션 1: 도쿄 디즈니 리조트</p>
+                                <p class="text-xs text-slate-500 mt-1">꿈과 환상의 나라 (사전 신청 필수 / 가이드 비동행)</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-emerald-500 rounded-full"></span>
+                                <p class="text-slate-800 font-medium">옵션 2: 하코네 국립공원 투어</p>
+                                <p class="text-xs text-slate-500 mt-1">후지산 조망, 온천, 유람선 (4인 이상 신청 시)</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-blue-500 rounded-full"></span>
+                                <p class="text-slate-800 font-medium">옵션 3: 도쿄 시내 투어</p>
+                                <p class="text-xs text-slate-500 mt-1">도쿄타워, 긴자, 황거 등 (4인 이상 신청 시)</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-slate-400 rounded-full"></span>
+                                <p class="text-slate-800 font-medium">호텔 투숙</p>
+                                <p class="text-sm text-slate-500 mt-1">호텔: 데이 나이스 호텔 또는 동급 (비즈니스급)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Day 3 -->
+                    <div id="day3" class="tab-content hidden animate-fade-in">
+                        <h3 class="font-bold text-lg mb-4 text-slate-800">자유 일정 (숨은 명소 찾기)</h3>
+                         <div class="bg-yellow-50 p-4 rounded-lg mb-4 text-sm text-slate-700">
+                            <i class="fa-solid fa-lightbulb text-yellow-500 mr-2"></i><strong>추천 일정</strong><br>
+                            전일 자유 일정입니다. 2일차에 못 가본 곳을 방문해보세요.
+                        </div>
+                        <ul class="space-y-6 border-l-2 border-slate-100 ml-2 pl-6">
+                            <li class="relative"><span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span><p class="text-slate-800 font-medium">호텔 조식</p></li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-purple-500 rounded-full"></span>
+                                <p class="text-slate-800 font-medium">자유 시간 즐기기</p>
+                                <p class="text-xs text-slate-500 mt-1">추천: 시부야 스카이 전망대, 신주쿠 쇼핑, 오모테산도 카페거리</p>
+                            </li>
+                             <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-slate-400 rounded-full"></span>
+                                <p class="text-slate-800 font-medium">호텔 투숙</p>
+                                <p class="text-sm text-slate-500 mt-1">호텔: 2일차와 동일</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Day 4 -->
+                    <div id="day4" class="tab-content hidden animate-fade-in">
+                        <h3 class="font-bold text-lg mb-4 text-slate-800">핵심 관광 & 귀국</h3>
+                        <ul class="space-y-6 border-l-2 border-slate-100 ml-2 pl-6">
+                            <li class="relative"><span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span><p class="text-slate-800 font-medium">호텔 조식 및 체크아웃</p></li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span>
+                                <p class="text-slate-800 font-medium">아사쿠사 관음사 & 나카미세</p>
+                                <p class="text-xs text-slate-500 mt-1">도쿄의 전통이 살아있는 거리</p>
+                            </li>
+                            <li class="relative"><span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span><p class="text-slate-800 font-medium">스카이트리 (차창 조망)</p></li>
+                            <li class="relative"><span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span><p class="text-slate-800 font-medium">쇼핑센터 방문 (1회)</p></li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-pink-500 rounded-full"></span>
+                                <p class="text-slate-800 font-medium">오다이바 해변공원</p>
+                                <p class="text-xs text-slate-500 mt-1">자유의 여신상, 건담, 레인보우 브릿지</p>
+                            </li>
+                             <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-sky-500 rounded-full"></span>
+                                <span class="text-sky-600 font-bold text-sm">18:30</span>
+                                <p class="text-slate-800 font-medium">나리타 출발 (ZE604)</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-[31px] top-1 w-4 h-4 bg-sky-500 rounded-full"></span>
+                                <span class="text-sky-600 font-bold text-sm">21:15</span>
+                                <p class="text-slate-800 font-medium">인천 도착</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Hotel Info -->
+        <section id="hotel" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center mb-10">
+                        <h2 class="text-2xl font-bold text-slate-800">숙박 호텔 안내</h2>
+                        <p class="text-indigo-600 font-bold mt-2 bg-indigo-50 inline-block px-4 py-1 rounded-full text-xs md:text-sm">
+                            <i class="fa-solid fa-circle-info mr-1"></i> 출발 2~3일 전 최종 확정됩니다.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Hotel 1 -->
+                        <div class="bg-slate-50 rounded-2xl overflow-hidden shadow-md border border-slate-100">
+                            <div class="relative h-48">
+                                <img src="https://images.unsplash.com/photo-1562133567-b6a0a9c7e6eb?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover">
+                                <span class="absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-bold">1일차 (나리타)</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-slate-800 mb-1">나리타 게이트웨이 호텔</h3>
+                                <p class="text-xs text-slate-500 mb-2">또는 동급 (마로드, 마이스테이즈 등)</p>
+                                <p class="text-sm text-slate-600">공항 접근성이 좋고 쾌적한 3성급 호텔입니다.</p>
+                            </div>
+                        </div>
+                        <!-- Hotel 2 -->
+                        <div class="bg-slate-50 rounded-2xl overflow-hidden shadow-md border border-slate-100">
+                            <div class="relative h-48">
+                                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover">
+                                <span class="absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-bold">2,3일차 (도쿄)</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-slate-800 mb-1">데이 나이스 호텔</h3>
+                                <p class="text-xs text-slate-500 mb-2">또는 동급 (도쿄 씨포트, T마크 시티 등)</p>
+                                <p class="text-sm text-slate-600">도쿄 시내 이동이 편리한 비즈니스급 호텔입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Video -->
+        <section class="py-16 bg-slate-900">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-8 text-white">
+                    <h2 class="text-2xl font-bold">✨ 미리보는 도쿄</h2>
+                    <p class="text-slate-400 text-sm mt-1">도쿄의 감성을 느껴보세요</p>
+                </div>
+                <div class="max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl border border-slate-700 relative group">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/xY_heAX39qc" title="Tokyo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Assistant -->
+        <section id="assistant" class="py-20 bg-slate-100">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl font-bold text-slate-800">나만의 여행비서</h2>
+                    <p class="text-sm text-slate-500 mt-2">
+                        6명 우리 팀을 위한 꿀팁!
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Checklist -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                        <h3 class="font-bold mb-4 text-pink-700 flex items-center">
+                            <i class="fa-solid fa-check-double mr-2"></i> 준비물 체크
+                        </h3>
+                        <div id="checklist-container" class="space-y-3 max-h-[300px] overflow-y-auto pr-2"></div>
+                    </div>
+
+                    <!-- Contact & Tip -->
+                    <div class="space-y-6">
+                        <!-- Tip Box -->
+                        <div class="bg-emerald-50 p-6 rounded-2xl shadow-sm border border-emerald-100">
+                             <h3 class="font-bold mb-2 text-emerald-800"><i class="fa-solid fa-lightbulb mr-2"></i>단체 여행 꿀팁</h3>
+                             <p class="text-sm text-emerald-700 leading-relaxed">
+                                6명이라 <strong>택시 2대</strong>로 이동하시거나,<br>
+                                자유일정에 <strong>'단독 차량 투어'</strong>를 예약하시면 우리끼리 편안하게 다닐 수 있습니다. (문의주시면 안내해드릴게요!)
+                             </p>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                            <h3 class="font-bold mb-4 text-slate-800">📞 비상 연락망</h3>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div class="bg-slate-50 p-3 rounded hover:bg-slate-100 transition-colors">
+                                    <p class="text-slate-500 text-xs mb-1">투어메이커 (담당자)</p>
+                                    <a href="tel:01094437881" class="block font-bold text-pink-600 text-base">010-9443-7881</a>
+                                </div>
+                                <div class="bg-slate-50 p-3 rounded hover:bg-slate-100 transition-colors">
+                                    <p class="text-slate-500 text-xs mb-1">영사콜센터 (24시간)</p>
+                                    <a href="tel:+82232100404" class="block font-bold text-slate-800 text-base">+82-2-3210-0404</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Nav (Mobile) -->
+        <div class="md:hidden fixed bottom-0 w-full bg-white border-t border-slate-200 flex justify-around py-3 z-50 text-[10px] text-slate-500 font-medium shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
+            <a href="#home" class="flex flex-col items-center gap-1"><i class="fa-solid fa-house text-lg"></i>홈</a>
+            <a href="#guide" class="flex flex-col items-center gap-1 text-blue-600"><i class="fa-solid fa-plane-departure text-lg"></i>공항</a>
+            <a href="#timeline" class="flex flex-col items-center gap-1"><i class="fa-regular fa-calendar-days text-lg"></i>일정</a>
+            <a href="#assistant" class="flex flex-col items-center gap-1 text-yellow-600"><i class="fa-solid fa-briefcase text-lg"></i>준비물</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-16 text-center text-sm border-t border-slate-800">
+        <div class="container mx-auto px-4">
+            
+            <!-- Partner Logos -->
+            <div class="inline-flex justify-center items-center gap-6 mb-8 bg-white rounded-xl py-4 px-8 shadow-lg">
+                <!-- Tourmaker -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" alt="Tourmaker" class="h-8 md:h-10 w-auto">
+                <span class="text-xl text-slate-300 font-light">|</span>
+                <!-- Modetour -->
+                <img src="https://www.modetour.com/icons/logo.png" alt="Modetour" class="h-6 md:h-8 w-auto">
+            </div>
+
+            <div class="max-w-2xl mx-auto space-y-2">
+                <p class="text-slate-300 font-medium">
+                    본 상품은 <span class="text-pink-500 font-bold">모두투어</span>와 정식 제휴를 맺은 <span class="text-white font-bold">투어메이커</span>가<br class="md:hidden"> 판매, 예약, 결제 및 고객관리를 전담합니다.
+                </p>
+                <p class="text-[10px] text-slate-600 mt-4">
+                    &copy; 2026 Tourmaker. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // D-Day Logic (2026.05.22)
+        function updateDday() {
+            const now = new Date().getTime();
+            const start = new Date('2026-05-22T00:00:00').getTime();
+            const end = new Date('2026-05-25T23:59:59').getTime();
+            
+            const badge = document.getElementById('d-day-badge');
+            if (!badge) return;
+
+            if (now < start) {
+                const diff = Math.ceil((start - now) / (1000 * 60 * 60 * 24));
+                badge.innerText = `D-${diff}`;
+                badge.className = "bg-pink-600 text-white text-[10px] md:text-xs font-bold px-2 md:px-3 py-1 rounded-full shadow";
+            } else if (now >= start && now <= end) {
+                const dayDiff = Math.floor((now - start) / (1000 * 60 * 60 * 24)) + 1;
+                badge.innerText = `여행 ${dayDiff}일차`;
+                badge.className = "bg-orange-500 text-white text-[10px] md:text-xs font-bold px-2 md:px-3 py-1 rounded-full shadow animate-pulse";
+            } else {
+                badge.innerText = "여행 종료";
+                badge.className = "bg-slate-500 text-white text-[10px] md:text-xs font-bold px-2 md:px-3 py-1 rounded-full shadow";
+            }
+        }
+        updateDday();
+
+        // Robust Share Function
+        function shareLink() {
+            const url = window.location.href;
+            if (navigator.share) {
+                navigator.share({
+                    title: '도쿄 3박4일 일정표 (5/22)',
+                    text: '투어메이커 프리미엄 가이드북입니다.',
+                    url: url
+                }).catch(console.error);
+            } else {
+                copyToClipboard(url);
+            }
+        }
+
+        // Clipboard Fallback
+        function copyToClipboard(text) {
+             if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('주소가 복사되었습니다. 카톡에 붙여넣기 하세요!');
+                }).catch(() => {
+                    alert('주소 복사에 실패했습니다.');
+                });
+            } else {
+                let textArea = document.createElement("textarea");
+                textArea.value = text;
+                textArea.style.position = "fixed";
+                textArea.style.left = "-9999px";
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    alert('주소가 복사되었습니다.');
+                } catch (err) {
+                    alert('주소 복사에 실패했습니다.');
+                }
+                document.body.removeChild(textArea);
+            }
+        }
+
+        // Intersection Observer for Nav
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').substring(1) === entry.target.id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.2 });
+        document.querySelectorAll('section').forEach(section => observer.observe(section));
+
+        // Tabs
+        function openTab(evt, tabName) {
+            var i, tabContent, tabBtns;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+                tabContent[i].classList.remove('animate-fade-in');
+            }
+            tabBtns = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].className = tabBtns[i].className.replace(" active", "");
+            }
+            const selectedTab = document.getElementById(tabName);
+            selectedTab.style.display = "block";
+            void selectedTab.offsetWidth; 
+            selectedTab.classList.add('animate-fade-in');
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("day1").style.display = "block";
+
+        // Checklist Logic
+        const PREFIX = 'tm_Tokyo_20260522_';
+        const checklistData = [
+            { id: 'pass', text: '여권 (유효기간 6개월 이상)' },
+            { id: 'vjw', text: 'Visit Japan Web 등록 (QR)' },
+            { id: 'ticket', text: '이스타항공 E-티켓 (캡쳐)' },
+            { id: 'wifi', text: '와이파이 도시락/유심' },
+            { id: 'adapter', text: '110v 돼지코 (필수!)' },
+            { id: 'money', text: '엔화 환전 & 트래블로그' },
+            { id: 'meds', text: '상비약 (소화제, 두통약)' }
+        ];
+
+        const container = document.getElementById('checklist-container');
+        checklistData.forEach(item => {
+            const label = document.createElement('label');
+            label.className = 'flex items-center p-3 bg-slate-50 rounded-lg border border-slate-100 hover:bg-pink-50 transition-colors cursor-pointer mb-2 select-none';
+            label.innerHTML = `
+                <input type="checkbox" id="${item.id}" class="w-5 h-5 text-pink-600 rounded border-gray-300 focus:ring-pink-500 cursor-pointer">
+                <span class="ml-3 text-slate-700 font-medium flex-grow">${item.text}</span>
+            `;
+            container.appendChild(label);
+            
+            const checkbox = label.querySelector('input');
+            const saved = localStorage.getItem(PREFIX + item.id);
+            
+            if (saved === 'true') { 
+                checkbox.checked = true; 
+                label.classList.add('bg-pink-50'); 
+            }
+            
+            checkbox.addEventListener('change', (e) => {
+                localStorage.setItem(PREFIX + item.id, e.target.checked);
+                if(e.target.checked) label.classList.add('bg-pink-50'); 
+                else label.classList.remove('bg-pink-50');
+            });
+        });
+
+        // Animation
+        const style = document.createElement('style');
+        style.innerHTML = `@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } } @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } } .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; } .animate-fade-in { animation: fadeIn 0.4s ease-out forwards; }`;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
